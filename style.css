@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(to right, #dcdcdc, #ffff);
+    color: #333;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Menambahkan transisi untuk efek halus */
+}
+
+.nav-links a:hover {
+    color: gray; /* Warna baru saat hover */
+}
+
+
+#hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #dcdcdc, #ffff);
+    color: #333;
+    padding: 2rem;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+    flex-wrap: wrap; /* Memungkinkan elemen untuk melipat jika diperlukan */
+}
+
+.hero-left {
+    flex: 1;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Menjaga elemen di bagian atas */
+    min-height: 300px; /* Menetapkan tinggi minimum */
+}
+
+.hero-left .text-container {
+    display: flex;
+    align-items: center;
+}
+
+.hero-left h1 {
+    margin: 0;
+}
+
+.hero-left h1 {
+    font-size: 3.5rem;
+    margin-right: auto;
+}
+
+.hero-left p {
+    margin-right: auto;
+    font-size: 1em;
+}
+
+.hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-left: 2rem; /* Mengurangi margin agar lebih responsif */
+}
+
+.profile-photo {
+    width: 650px; /* Atur ukuran sesuai kebutuhan */
+    height: auto; /* Agar tinggi mengikuti proporsi asli */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+}
+
+.container {
+    max-width: 1000px; /* Atur lebar maksimum kontainer */
+    margin: 0 auto; /* Mengatur margin otomatis di kiri dan kanan */
+    padding: 1rem; /* Tambahkan sedikit padding */
+    font-size: 0.9rem;
+}
+
+.container img {
+    width: 100%; /* Mengisi lebar maksimal yang diberikan oleh kontainer */
+    height: 200px; /* Atur tinggi gambar agar seragam */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi dan memotong sesuai ukuran */
+    border-radius: 5px; /* Opsi tambahan untuk membuat sudut gambar membulat */
+}
+
+.container-about p{
+    max-width: 1000px; /* Atur lebar maksimum kontainer */
+    margin: 0 auto; /* Mengatur margin otomatis di kiri dan kanan */
+    padding: 1rem; /* Tambahkan sedikit padding */
+    font-size: 0.9rem;
+    text-align: justify;
+}
+.item p {
+    text-align: justify;
+  }
+  
+.cta-btn {
+    background: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    width: auto; /* Pastikan lebar tombol otomatis menyesuaikan isi */
+    transition: background 0.3s ease, transform 0.3s ease; /* Menambahkan transisi untuk efek halus */
+}
+
+.cta-btn:hover {
+    background: gray; /* Warna baru saat hover */
+    transform: scale(1.05); /* Efek membesar sedikit saat hover */
+}
+
+.button-container {
+    margin-top: auto; /* Mengisi ruang kosong di atas tombol */
+}
+
+
+@media (max-width: 1024px) {
+    .hero-left h1 {
+        font-size: 3rem; /* Mengurangi ukuran font untuk layar lebih kecil */
+    }
+    .profile-photo {
+        width: 600px; /* Menyesuaikan ukuran gambar untuk layar lebih kecil */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-left {
+        padding-right: 0;
+    }
+
+    .hero-right {
+        margin-left: 0; /* Menghapus margin kiri pada layar kecil */
+    }
+
+    .profile-photo {
+        width: 250px;
+        height: 250px;
+    }
+
+    .cta-btn {
+        margin-right: 0; /* Menghapus margin pada tombol CTA */
+    }
+
+    .hero-left h1 {
+        font-size: 2.5rem; /* Mengurangi ukuran font untuk layar kecil */
+    }
+}
+
+#about,
+#portfolio,
+#services,
+#contact {
+    padding: 4rem 0;
+    text-align: center;
+}
+.services, p{
+    text-align: justify;
+    font-size: 0.9rem;
+}
+h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.portfolio-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsif untuk portofolio */
+    gap: 1rem;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.service-cards{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap; /* Memungkinkan card untuk melipat jika diperlukan */
+}
+
+.service-cards p{
+    text-align: justify;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Jarak antar ikon */
+    padding: 1rem 0;
+}
+
+.contact-icon {
+    width: 50px; /* Ukuran ikon */
+    height: auto;
+    transition: transform 0.3s ease; /* Transisi untuk efek hover */
+}
+
+.contact-icon:hover {
+    transform: scale(1.1); /* Efek membesar saat hover */
+    filter: brightness(1.2); /* Menerapkan efek kecerahan saat hover */
+}
+
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer, p{
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .service-cards {
+        flex-direction: column; /* Menjadikan card dalam kolom pada layar kecil */
+    }
+}
+
+.typing {
+    display: inline-block;
+    border-right: 2px ; 
+    margin-right: auto;
+}
+
+.blink {
+    animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: #fff; }
+}
+

@@ -269,10 +269,10 @@ h2 {
 }
 
 .service-cards{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
     justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap; /* Memungkinkan card untuk melipat jika diperlukan */
 }
 
 .service-cards p{
@@ -283,7 +283,18 @@ h2 {
     background: #f4f4f4;
     padding: 1rem;
     border-radius: 5px;
-    width: 300px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .service-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        max-width: 100%;
+    }
 }
 
 .contact-icons {

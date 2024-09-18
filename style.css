@@ -197,19 +197,24 @@ nav {
     padding: 4rem 0;
     text-align: center;
 }
-.services, p{
+
+.services p,
+.portfolio-items p {
     text-align: justify;
     font-size: 0.9rem;
 }
+
 h2 {
     margin-bottom: 2rem;
     font-size: 2rem;
 }
 
-.portfolio-items {
+.portfolio-items,
+.service-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsif untuk portofolio */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1rem;
+    justify-content: center;
 }
 
 .item img {
@@ -217,22 +222,24 @@ h2 {
     border-radius: 5px;
 }
 
-.service-cards{
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap; /* Memungkinkan card untuk melipat jika diperlukan */
-}
-
-.service-cards p{
-    text-align: justify;
-}
-
 .card {
     background: #f4f4f4;
     padding: 1rem;
     border-radius: 5px;
-    width: 300px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .portfolio-items,
+    .service-cards {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    .card {
+        width: 100%;
+    }
 }
 
 .contact-icons {

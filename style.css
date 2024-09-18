@@ -21,6 +21,7 @@ nav {
     align-items: center;
     width: 80%;
     margin: auto;
+    transition: transform 0.3s ease-in-out;
 }
 
 .logo {
@@ -30,23 +31,71 @@ nav {
 
 .nav-links {
     list-style: none;
+    display: flex;
+    align-items: center;
 }
 
 .nav-links li {
-    display: inline;
     margin: 0 1rem;
 }
 
 .nav-links a {
     color: black;
     text-decoration: none;
-    transition: color 0.3s ease; /* Menambahkan transisi untuk efek halus */
+    transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: gray; /* Warna baru saat hover */
+    color: gray;
 }
 
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100vh;
+        background-color: #f4f4f4;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 2rem;
+        z-index: 1000;
+    }
+
+    nav.active {
+        right: 0;
+    }
+
+    .logo {
+        margin-bottom: 2rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links li {
+        margin: 1rem 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        z-index: 1001;
+    }
+}
 
 #hero {
     height: 100vh;
@@ -197,24 +246,19 @@ nav {
     padding: 4rem 0;
     text-align: center;
 }
-
-.services p,
-.portfolio-items p {
+.services, p{
     text-align: justify;
     font-size: 0.9rem;
 }
-
 h2 {
     margin-bottom: 2rem;
     font-size: 2rem;
 }
 
-.portfolio-items,
-.service-cards {
+.portfolio-items {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsif untuk portofolio */
     gap: 1rem;
-    justify-content: center;
 }
 
 .item img {
@@ -222,24 +266,22 @@ h2 {
     border-radius: 5px;
 }
 
+.service-cards{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap; /* Memungkinkan card untuk melipat jika diperlukan */
+}
+
+.service-cards p{
+    text-align: justify;
+}
+
 .card {
     background: #f4f4f4;
     padding: 1rem;
     border-radius: 5px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-@media (max-width: 768px) {
-    .portfolio-items,
-    .service-cards {
-        grid-template-columns: 1fr;
-        padding: 0 1rem;
-    }
-
-    .card {
-        width: 100%;
-    }
+    width: 300px;
 }
 
 .contact-icons {

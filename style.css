@@ -23,57 +23,6 @@ nav {
     margin: auto;
 }
 
-@media (max-width: 768px) {
-    nav {
-        display: none; /* Menyembunyikan navbar pada layar kecil */
-    }
-
-    /* Opsional: Tambahkan tombol menu hamburger jika diperlukan */
-    .menu-toggle {
-        display: block;
-        /* Styling untuk tombol menu hamburger */
-    }
-}
-
-/* Sisipkan kode ini di bagian atas file CSS Anda */
-.menu-toggle {
-    display: none; /* Sembunyikan tombol menu pada layar besar */
-    /* Styling tambahan untuk tombol menu */
-}
-
-/* Kode navbar yang sudah ada tetap sama */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    margin: auto;
-}
-
-.logo {
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.nav-links {
-    list-style: none;
-}
-
-.nav-links li {
-    display: inline;
-    margin: 0 1rem;
-}
-
-.nav-links a {
-    color: black;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: gray;
-}
-
 .logo {
     font-size: 1.2rem;
     font-weight: bold;
@@ -269,10 +218,10 @@ h2 {
 }
 
 .service-cards{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1rem;
+    display: flex;
     justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap; /* Memungkinkan card untuk melipat jika diperlukan */
 }
 
 .service-cards p{
@@ -283,18 +232,7 @@ h2 {
     background: #f4f4f4;
     padding: 1rem;
     border-radius: 5px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-@media (max-width: 768px) {
-    .service-cards {
-        grid-template-columns: 1fr;
-    }
-
-    .card {
-        max-width: 100%;
-    }
+    width: 300px;
 }
 
 .contact-icons {

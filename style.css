@@ -279,9 +279,9 @@ h2 {
 
 .card {
     background: #f4f4f4;
-    padding: 1rem;
-    border-radius: 5px;
-    width: 300px;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 455px;
 }
 
 .contact-icons {
@@ -335,3 +335,37 @@ footer, p{
     50% { border-color: #fff; }
 }
 
+/* Animasi Fade-in */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .item.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .card.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  

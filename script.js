@@ -65,3 +65,90 @@ contactIcons.forEach(icon => {
 });
 // Memulai animasi
 type();
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navbar = document.querySelector('.navbar');
+
+    menuToggle.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+    });
+
+    // Menutup sidebar ketika link di klik
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navbar.classList.remove('active');
+        });
+    });
+
+    // Menutup sidebar ketika klik di luar sidebar
+    document.addEventListener('click', (event) => {
+        if (!navbar.contains(event.target) && !menuToggle.contains(event.target)) {
+            navbar.classList.remove('active');
+        }
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show'); // Tambahkan kelas 'show' saat elemen terlihat
+            }
+        });
+    });
+
+    // Ambil semua elemen yang ingin diberikan efek animasi
+    const fadeElements = document.querySelectorAll('.fade-in');
+    fadeElements.forEach(el => observer.observe(el)); // Daftarkan elemen ke observer
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const items = document.querySelectorAll('.item');
+  
+    let options = {
+      threshold: 0.5 // Memunculkan item saat 10% dari item terlihat di layar
+    };
+  
+    let observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          // Tambahkan kelas 'show' dengan delay untuk animasi berurutan
+          setTimeout(() => {
+            entry.target.classList.add('show');
+          }, index * 400); // Delay setiap item 300ms
+          observer.unobserve(entry.target); // Menghentikan pengamatan setelah item muncul
+        }
+      });
+    }, options);
+  
+    items.forEach(item => {
+      observer.observe(item);
+    });
+  });
+  
+  document.addEventListener("DOMContentLoaded", function() {
+    const items = document.querySelectorAll('.card');
+  
+    let options = {
+      threshold: 0.5 // Memunculkan item saat 10% dari item terlihat di layar
+    };
+  
+    let observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          // Tambahkan kelas 'show' dengan delay untuk animasi berurutan
+          setTimeout(() => {
+            entry.target.classList.add('show');
+          }, index * 400); // Delay setiap item 300ms
+          observer.unobserve(entry.target); // Menghentikan pengamatan setelah item muncul
+        }
+      });
+    }, options);
+  
+    items.forEach(item => {
+      observer.observe(item);
+    });
+  });
+  

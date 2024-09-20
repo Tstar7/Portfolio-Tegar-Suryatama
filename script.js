@@ -3,7 +3,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
   alert('Your message has been sent successfully!');
 });
 
-const skills = ["HTML", "CSS", "JavaScript", "PHP", "Canva","Microsoft Word", "Microsoft Excel"];
+const skills = ["HTML", "CSS", "JavaScript", "PHP", "Canva","Microsoft Word", "Microsoft Excel", "Google Drive", "Google Docs", "Google Sheets"];
 const skillsContainer = document.getElementById("skills");
 let currentSkillIndex = 0;
 let currentCharIndex = 0;

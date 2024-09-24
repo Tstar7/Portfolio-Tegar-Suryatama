@@ -266,11 +266,13 @@ h2 {
     border-radius: 5px;
 }
 
-.service-cards{
-    display: flex;
-    justify-content: center;
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Membuat grid responsif */
     gap: 2rem;
-    flex-wrap: wrap; /* Memungkinkan card untuk melipat jika diperlukan */
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 1200px;
 }
 
 .service-cards p{
@@ -278,10 +280,19 @@ h2 {
 }
 
 .card {
-    background: #f4f4f4;
-    padding: 1rem;
+    padding: 2rem;
+    background-color: #f9f9f9;
     border-radius: 10px;
-    width: 394px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Efek hover */
+}
+
+a{
+    text-decoration: none;
 }
 
 .contact-icons {
@@ -369,3 +380,23 @@ footer, p{
     transform: translateY(0);
   }
   
+  @media (max-width: 768px) {
+    .service-cards {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Kurangi ukuran kolom */
+    }
+
+    .card {
+        padding: 1rem; /* Sesuaikan padding untuk layar lebih kecil */
+    }
+}
+
+/* Responsif untuk layar HP */
+@media (max-width: 480px) {
+    .service-cards {
+        grid-template-columns: 1fr; /* Hanya 1 kolom untuk layar sangat kecil */
+    }
+
+    .card {
+        padding: 1rem; /* Padding lebih kecil untuk HP */
+    }
+}

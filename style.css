@@ -257,14 +257,40 @@ h2 {
 
 .portfolio-items {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsif untuk portofolio */
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr)); /* Responsif untuk portofolio */
+    gap: 1.5rem; /* Memberikan jarak antar item */
+    padding: 2rem 0; /* Memberikan padding atas dan bawah untuk ruang lebih */
+}
+
+.item {
+    background-color: #fff; /* Warna latar belakang kartu */
+    border-radius: 10px; /* Sudut yang membulat */
+    overflow: hidden; /* Menghindari gambar yang melampaui batas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+    transition: transform 0.3s ease-in-out; /* Animasi ketika hover */
+    padding: 1rem; /* Memberikan ruang dalam kartu */
+    text-align: center; /* Menyelaraskan teks di tengah */
 }
 
 .item img {
-    width: 100%;
-    border-radius: 5px;
+    width: 100%; /* Membuat gambar memenuhi lebar kartu */
+    height: auto; /* Menjaga proporsi gambar */
+    border-radius: 8px; /* Sudut membulat pada gambar */
+    margin-bottom: 1rem; /* Memberikan jarak antara gambar dan teks */
 }
+
+.item h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Efek hover untuk kartu */
+.item:hover {
+    transform: translateY(-5px); /* Efek naik sedikit saat di-hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Bayangan lebih gelap saat hover */
+}
+
 
 .service-cards {
     display: grid;
@@ -400,3 +426,59 @@ footer, p{
         padding: 1rem; /* Padding lebih kecil untuk HP */
     }
 }
+
+/* Container untuk iframe agar responsif */
+.iframe-container {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Atur tinggi iframe */
+    max-width: 100%; /* Menghindari meluap pada layar kecil */
+    overflow: hidden;
+    margin-bottom: 20px; /* Memberi jarak antar projek */
+    border-radius: 5px;
+}
+
+/* Menyesuaikan ukuran iframe di dalam container */
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Styling umum untuk proyek */
+.project h5 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 16px;
+    color: #555;
+    
+}
+
+/* Memusatkan teks untuk judul projects */
+h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333; /* Warna teks */
+}
+
+.about-title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  .about-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: gray; /* Ubah warna garis sesuai keinginan */
+  }

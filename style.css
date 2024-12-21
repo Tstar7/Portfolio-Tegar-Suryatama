@@ -97,6 +97,26 @@ nav {
     }
 }
 
+
+#hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #dcdcdc, #ffff);
+    color: #333;
+    padding: 2rem;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+    flex-wrap: wrap; /* Memungkinkan elemen untuk melipat jika diperlukan */
+}
+
 #hero {
     height: 100vh;
     display: flex;
@@ -121,17 +141,8 @@ nav {
     padding-right: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Menjaga elemen di bagian atas */
-    min-height: 300px; /* Menetapkan tinggi minimum */
-}
-
-.hero-left .text-container {
-    display: flex;
-    align-items: center;
-}
-
-.hero-left h1 {
-    margin: 0;
+    justify-content: flex-start;
+    min-height: 300px;
 }
 
 .hero-left h1 {
@@ -139,31 +150,39 @@ nav {
     margin-right: auto;
 }
 
-.hero-left p {
-    margin-right: auto;
-    font-size: 1em;
-}
-
 .hero-right {
     flex: 1;
     display: flex;
     justify-content: center;
-    margin-left: 2rem; /* Mengurangi margin agar lebih responsif */
+    margin-left: 2rem;
 }
 
 .skills-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px; /* Space between icons */
-    justify-content: start;
-    align-items: center;
+    flex-direction: column; /* Menyusun baris secara vertikal */
+    gap: 15px; /* Jarak antara dua baris */
     margin-top: 10px;
+    width: 100%;
+}
+
+.skills-row {
+    display: flex;
+    justify-content: flex-start; /* Ikon diletakkan di kiri */
+    gap: 15px; /* Jarak antar ikon */
 }
 
 .skill-logo {
-    width: 30px; /* Size of each logo */
-    height: 30px;
+    width: 5%; /* Menentukan lebar setiap ikon agar 5 ikon pas dalam satu baris */
+    height: 10px;
     object-fit: contain;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .skill-logo {
+        width: 25%; /* Ukuran ikon lebih kecil di layar kecil, agar lebih banyak yang muat */
+        height: 40px;
+    }
 }
 
 .profile-photo {

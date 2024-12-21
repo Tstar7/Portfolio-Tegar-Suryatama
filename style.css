@@ -180,8 +180,8 @@ nav {
 /* Responsif untuk layar kecil */
 @media (max-width: 768px) {
     .skill-logo {
-        width: 25%; /* Ukuran ikon lebih kecil di layar kecil, agar lebih banyak yang muat */
-        height: 40px;
+        width: 15%; /* Ukuran ikon lebih kecil di layar kecil, agar lebih banyak yang muat */
+        height: 20px;
     }
 }
 

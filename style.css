@@ -151,6 +151,21 @@ nav {
     margin-left: 2rem; /* Mengurangi margin agar lebih responsif */
 }
 
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between icons */
+    justify-content: start;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.skill-logo {
+    width: 30px; /* Size of each logo */
+    height: 30px;
+    object-fit: contain;
+}
+
 .profile-photo {
     width: 650px; /* Atur ukuran sesuai kebutuhan */
     height: auto; /* Agar tinggi mengikuti proporsi asli */

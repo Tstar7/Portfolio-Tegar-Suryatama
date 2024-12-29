@@ -310,13 +310,16 @@ function showRelatedCertificates() {
   });
 }
 
-// Pilihan menggunakan JavaScript untuk smooth scroll
 document.querySelectorAll('a').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
+    // Pastikan link mengarah ke ID di halaman (bukan URL luar)
+    if (this.getAttribute('href').startsWith('#')) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
   });
 });
+
 

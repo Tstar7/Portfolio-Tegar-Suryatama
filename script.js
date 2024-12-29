@@ -151,4 +151,162 @@ document.addEventListener("DOMContentLoaded", function() {
       observer.observe(item);
     });
   });
-  
+
+
+// Data sertifikat utama dan sertifikat terkait
+const certificates = [
+  // Microsoft Excel Basic
+  [
+    { src: 'data (1).jpg', title: 'Microsoft Excel Basic' },  
+    { src: 'data (2).jpg', title: 'Microsoft Excel Basic' },  
+    { src: 'data (3).jpg', title: 'Microsoft Excel Basic' },  
+    { src: 'data (4).jpg', title: 'Microsoft Excel Basic' },  
+    { src: 'data (5).jpg', title: 'Microsoft Excel Basic' },  
+    { src: 'data (6).jpg', title: 'Microsoft Excel Basic' },  
+    { src: 'data (7).jpg', title: 'Microsoft Excel Basic' },  
+    { src: 'data (8).jpg', title: 'Microsoft Excel Basic' },  
+    { src: 'data (9).jpg', title: 'Microsoft Excel Basic' },  
+    { src: 'data (10).jpg', title: 'Microsoft Excel Basic' }
+    
+  ],
+  // Microsoft Excel Intermediate
+  [
+    { src: 'inter (1).jpg', title: 'Microsoft Excel Intermediate' },
+    { src: 'inter (2).jpg', title: 'Microsoft Excel Intermediate' },
+    { src: 'inter (3).jpg', title: 'Microsoft Excel Intermediate' },
+    { src: 'inter (4).jpg', title: 'Microsoft Excel Intermediate' },
+    { src: 'inter (5).jpg', title: 'Microsoft Excel Intermediate' },
+    { src: 'inter (6).jpg', title: 'Microsoft Excel Intermediate' },
+    { src: 'inter (7).jpg', title: 'Microsoft Excel Intermediate' },
+    { src: 'inter (8).jpg', title: 'Microsoft Excel Intermediate' },
+    { src: 'inter (9).jpg', title: 'Microsoft Excel Intermediate' },
+    { src: 'inter (10).jpg', title: 'Microsoft Excel Intermediate' },
+    { src: 'inter (11).jpg', title: 'Microsoft Excel Intermediate' },
+    { src: 'inter (12).jpg', title: 'Microsoft Excel Intermediate' },
+    { src: 'inter (13).jpg', title: 'Microsoft Excel Intermediate' },
+    { src: 'inter (14).jpg', title: 'Microsoft Excel Intermediate' },
+    { src: 'inter (15).jpg', title: 'Microsoft Excel Intermediate' },
+    { src: 'inter (16).jpg', title: 'Microsoft Excel Intermediate' },
+    { src: 'inter (17).jpg', title: 'Microsoft Excel Intermediate' },
+    { src: 'inter (18).jpg', title: 'Microsoft Excel Intermediate' },
+    { src: 'inter (19).jpg', title: 'Microsoft Excel Intermediate' }    
+  ],
+  // Basic Data
+  [
+    { src: 'basicdata (1).jpg', title: 'Basic Data' },
+    { src: 'basicdata (2).jpg', title: 'Basic Data' },
+    { src: 'basicdata (3).jpg', title: 'Basic Data' },
+    { src: 'basicdata (4).jpg', title: 'Basic Data' },
+    { src: 'basicdata (5).jpg', title: 'Basic Data' },
+    { src: 'basicdata (6).jpg', title: 'Basic Data' },
+    { src: 'basicdata (7).jpg', title: 'Basic Data' },
+    { src: 'basicdata (8).jpg', title: 'Basic Data' },
+    { src: 'basicdata (9).jpg', title: 'Basic Data' },
+    { src: 'basicdata (10).jpg', title: 'Basic Data' }
+    
+  ],
+    // Basic Accounting
+    [
+      { src: 'akun (1).jpg', title: 'Basic Accounting' },
+      { src: 'akun (2).jpg', title: 'Basic Accounting' },
+      { src: 'akun (3).jpg', title: 'Basic Accounting' },
+      { src: 'akun (4).jpg', title: 'Basic Accounting' },
+      { src: 'akun (5).jpg', title: 'Basic Accounting' },
+      { src: 'akun (6).jpg', title: 'Basic Accounting' }      
+    ],
+      // Microsoft Word
+      [
+        { src: 'word (1).jpg', title: 'Microsoft Word' },
+        { src: 'word (2).jpg', title: 'Microsoft Word' },
+        { src: 'word (3).jpg', title: 'Microsoft Word' },
+        { src: 'word (4).jpg', title: 'Microsoft Word' },
+        { src: 'word (5).jpg', title: 'Microsoft Word' }      
+      ],
+         // Microsoft PowerPoint
+         [
+          { src: 'poin (1).jpg', title: 'Microsoft PowerPoint' },
+          { src: 'poin (2).jpg', title: 'Microsoft PowerPoint' },
+          { src: 'poin (3).jpg', title: 'Microsoft PowerPoint' },
+          { src: 'poin (4).jpg', title: 'Microsoft PowerPoint' },
+          { src: 'poin (5).jpg', title: 'Microsoft PowerPoint' }      
+        ],
+            // Artificial Intelligence
+            [
+              { src: 'ai (1).jpg', title: 'Artificial Intelligence' },
+              { src: 'ai (2).jpg', title: 'Artificial Intelligence' },
+              { src: 'ai (3).jpg', title: 'Artificial Intelligence' },
+              { src: 'ai (4).jpg', title: 'Artificial Intelligence' },
+              { src: 'ai (5).jpg', title: 'Artificial Intelligence' }      
+            ],
+               // Canva for Design
+               [
+                { src: 'canva (1).jpg', title: 'Canva for Design' },
+                { src: 'canva (2).jpg', title: 'Canva for Design' },
+                { src: 'canva (3).jpg', title: 'Canva for Design' },
+                { src: 'canva (4).jpg', title: 'Canva for Design' },
+                { src: 'canva (5).jpg', title: 'Canva for Design' }      
+              ],
+               // Front-End Web Development
+               [
+                { src: 'frontend1.jpg', title: 'Front-End Web Development' },
+                { src: 'frontend2.jpg', title: 'Front-End Web Development' }      
+              ],
+  // Sertifikat lainnya...
+];
+
+let currentCategoryIndex = 0; // Kategori sertifikat yang sedang ditampilkan
+let currentCertIndex = 0; // Sertifikat yang sedang ditampilkan dalam kategori
+
+// Fungsi untuk membuka modal dengan sertifikat terkait
+function openModal(index) {
+  currentCategoryIndex = index;
+  currentCertIndex = 0; // Mulai dari sertifikat pertama di kategori tersebut
+
+  // Ambil sertifikat berdasarkan kategori yang dipilih
+  updateModalContent();
+  showRelatedCertificates();
+
+  document.getElementById("certificateModal").style.display = "block";
+}
+
+// Fungsi untuk menutup modal
+function closeModal() {
+  document.getElementById("certificateModal").style.display = "none";
+}
+
+// Fungsi untuk mengganti sertifikat dengan tombol kiri-kanan
+function changeCert(direction) {
+  currentCertIndex += direction;
+
+  // Jika index melebihi batas, kembali ke awal atau akhir array
+  const category = certificates[currentCategoryIndex];
+  if (currentCertIndex < 0) {
+    currentCertIndex = category.length - 1;
+  } else if (currentCertIndex >= category.length) {
+    currentCertIndex = 0;
+  }
+
+  updateModalContent();
+}
+
+// Fungsi untuk memperbarui konten modal
+function updateModalContent() {
+  const category = certificates[currentCategoryIndex];
+  const cert = category[currentCertIndex];
+
+  document.getElementById("modalImage").src = cert.src;
+  document.getElementById("modalTitle").textContent = cert.title;
+}
+
+// Fungsi untuk menampilkan sertifikat terkait di pop-up
+function showRelatedCertificates() {
+  const relatedCertificates = document.querySelectorAll('.related-certificate');
+  relatedCertificates.forEach(cert => {
+    if (cert.dataset.category == currentCategoryIndex) {
+      cert.style.display = "block"; // Menampilkan sertifikat terkait
+    } else {
+      cert.style.display = "none"; // Menyembunyikan sertifikat yang tidak relevan
+    }
+  });
+}
+

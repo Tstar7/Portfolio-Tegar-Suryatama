@@ -9,6 +9,7 @@ body {
     line-height: 1.6;
     background-color: #F5EFE7; /* Background utama */
     color: #213555; /* Teks utama */
+    
 }
 
 header {
@@ -168,10 +169,18 @@ nav {
 }
 
 .profile-photo {
-    width: 650px;
-    height: auto;
+    width: 300px; /* Ukuran lebih besar */
+    height: 300px; /* Ukuran lebih besar */
+    border-radius: 50%;
     object-fit: cover;
+    filter: grayscale(100%); /* Mengubah gambar menjadi hitam putih */
+    transition: filter 0.3s ease;
 }
+
+.profile-photo:hover {
+    filter: grayscale(0%); /* Kembali ke warna asli saat hover */
+}
+
 
 .container {
     max-width: 1000px;

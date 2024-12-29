@@ -169,7 +169,7 @@ nav {
 }
 
 .profile-photo {
-    width: 300px; /* Ukuran lebih besar */
+    width: 200px; /* Ukuran lebih besar */
     height: 300px; /* Ukuran lebih besar */
     border-radius: 50%;
     object-fit: cover;
@@ -533,7 +533,6 @@ h2 {
     color: #555;
     text-align: left; /* Pastikan deskripsi di sebelah kiri */
 }
-
 /* Media Query untuk tampilan lebih kecil (mobile) */
 @media (max-width: 768px) {
     .projects-grid {
@@ -542,7 +541,9 @@ h2 {
     }
 
     .project img {
-        height: 180px; /* Menyesuaikan tinggi gambar pada perangkat kecil */
+        height: auto; /* Biarkan tinggi gambar menyesuaikan otomatis */
+        width: 100%; /* Lebar gambar penuh sesuai kontainer */
+        object-fit: cover; /* Menjaga proporsi gambar tanpa terdistorsi dan tidak terpotong */
     }
 }
 
@@ -554,7 +555,9 @@ h2 {
     }
 
     .project img {
-        height: 160px; /* Menyesuaikan tinggi gambar untuk tampilan sangat kecil */
+        height: auto; /* Menyesuaikan tinggi gambar secara otomatis */
+        width: 100%; /* Menyesuaikan lebar gambar dengan kontainer */
+        object-fit: cover; /* Gambar tetap menjaga proporsi dan tidak terpotong */
     }
 
     .project h5 {
@@ -565,6 +568,7 @@ h2 {
         font-size: 0.9rem; /* Menyesuaikan ukuran teks deskripsi */
     }
 }
+
 
 
 /* Modal Background */

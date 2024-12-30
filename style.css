@@ -176,11 +176,6 @@ nav {
 }
 
 
-.profile-photo:hover {
-    filter: grayscale(0%); /* Kembali ke warna asli saat hover */
-}
-
-
 .container {
     max-width: 1000px;
     margin: 0 auto;

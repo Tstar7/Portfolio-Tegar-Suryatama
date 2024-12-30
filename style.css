@@ -169,13 +169,12 @@ nav {
 }
 
 .profile-photo {
-    width: 200px; /* Ukuran lebih besar */
-    height: 300px; /* Ukuran lebih besar */
-    border-radius: 50%;
-    object-fit: cover;
-    filter: grayscale(100%); /* Mengubah gambar menjadi hitam putih */
-    transition: filter 0.3s ease;
+    width: 300px; /* Ukuran foto */
+    height: 300px; /* Ukuran foto */
+    border-radius: 50%; /* Membuat foto menjadi bulat */
+    object-fit: cover; /* Menyesuaikan gambar agar tidak terdistorsi */
 }
+
 
 .profile-photo:hover {
     filter: grayscale(0%); /* Kembali ke warna asli saat hover */

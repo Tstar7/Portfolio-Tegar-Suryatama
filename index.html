@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Tegar Suryatama</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        body {
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+        }
+        .modern-card {
+            background: #1e293b;
+            border-radius: 15px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .modern-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px #577BC1, 0 0 30px #577BC1, 0 0 45px #577BC1;
+        }
+
+        .social-icons a {
+            transition: transform 0.2s;
+            color: #ffcc00;
+        }
+        .social-icons a:hover {
+            transform: scale(1.4);
+        }
+
+        .nav-icons a {
+            transition: transform 0.2s;
+            color: #ffcc00;
+        }
+        .nav-icons a:hover {
+            transform: scale(1.4);
+        }
+
+        html {
+    scroll-behavior: smooth;
+}
+
+    </style>
+    <script>
+        document.querySelectorAll('.nav-icons a, .fixed.right-4 a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 20,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+    
+</head>
+<body class="flex flex-col items-center min-h-screen p-6 relative">
+    <!-- Sidebar Kiri -->
+    <div class="fixed right-4 top-1/4 flex flex-col space-y-4 text-yellow-400 text-2xl">
+        <a href="#tentang" class="hover:scale-110 transition-transform"><i class="fas fa-user"></i></a>
+        <a href="#projek" class="hover:scale-110 transition-transform"><i class="fas fa-folder"></i></a>
+        <a href="#sertifikat" class="hover:scale-110 transition-transform"><i class="fas fa-certificate"></i></a>
+        <a href="#skill" class="hover:scale-110 transition-transform"><i class="fas fa-code"></i></a>
+        <a href="#keterampilan" class="hover:scale-110 transition-transform"><i class="fas fa-tools"></i></a>
+    </div>
+    
+    <!-- Profil -->
+    <aside class="w-full md:w-60 md:fixed md:left-4 md:top-1/4 modern-card flex flex-col items-center text-center md:mb-0 mb-6">
+        <img src="saya.jpeg" alt="Foto Profil" class="w-24 h-24 rounded-full border-4 border-blue-400">
+        <h1 class="mt-4 text-lg font-bold text-blue-300">Tegar Suryatama</h1>
+        <p class="mt-2 text-gray-400 text-sm">Administrasi</p>
+        <div class="flex mt-4 space-x-3 social-icons">
+            <a href="https://www.linkedin.com/in/tegar-suryatama-102b65221" target="_blank"><img src="link.png" alt="LinkedIn" title="LinkedIn" class="w-8 h-8"></a>
+            <a href="mailto:tegarsuryatama73@gmail.com" target="_blank"><img src="gmail.png" alt="Email" title="Gmail"  class="w-8 h-8"></a> 
+            <a href="https://www.instagram.com/starmoon1407?igsh=MWhob29tN3U0OXo0ZQ==" target="_blank"><img src="ig.png" alt="Instagram" title="Instagram"  class="w-8 h-8"></a>
+            <a href="https://tstar7.github.io/Starmoon-Labs/" target="_blank"><img src="bintang.png" alt="Starmoom Labs" title="Starmoom Labs"  class="w-8 h-8"></a>
+        </div>
+    </aside>
+
+    <!-- Navigasi Kanan -->
+    <aside class="w-full md:w-20 md:fixed md:right-20 md:top-1/4 modern-card flex flex-col items-center text-center md:mb-0 mb-6 hidden md:flex">
+        <div class="flex flex-col mt-4 space-y-3 nav-icons" >
+            <a href="#tentang"><img src="user.png" alt="Tentang Saya" title="Tentang Saya" class="w-8 h-8"></a>
+            <a href="#projek"><img src="projek.png" alt="Projek" title="Projek" class="w-8 h-8"></a>
+            <a href="#sertifikat"><img src="sertifikat.png" alt="Sertifikat" title="Sertifikat" class="w-8 h-8"></a>
+            <a href="#skill"><img src="skill.png" alt="Skill" title="Skill" class="w-8 h-8"></a>
+            <a href="#keterampilan"><img src="kemampuan.png" alt="Keterampilan" title="Keterampilan" class="w-8 h-8"></a>
+        </div>
+    </aside>
+
+    <!-- Konten Utama -->
+    <main class="md:ml-72 p-6 w-full max-w-4xl mx-auto">
+        <section id="tentang">
+            <h2 class="text-2xl font-bold text-blue-400">Tentang Saya</h2>
+            <div class="mt-4 modern-card">
+                <p class="text-gray-300">Saya Tegar Suryatama, lulusan D3 Manajemen Informatika Politeknik Negeri Sriwijaya tahun 2024. Berpengalaman dalam administrasi, pengelolaan data, serta pengembangan antarmuka pengguna website dan desain grafis. Terbiasa bekerja dengan teknologi AI untuk otomatisasi tugas administratif dan analisis data. Dengan ketelitian, kreativitas, dan semangat belajar, saya berupaya memberikan solusi yang efisien dan user-friendly dalam mendukung operasional bisnis.</p>
+                <br>
+                <b><i>"Teknologi tidak hanya memecahkan masalah, tetapi juga menciptakan peluang untuk menjadikan dunia lebih baik"</i></b>
+            </div>
+        </section>
+        
+        <section id="projek" class="mt-8">
+            <h2 class="text-2xl font-bold text-blue-400">Projek</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+                <a href="https://drive.google.com/file/d/1IUL3V_aYTWD72aivqPD78wiPE3yrrkQe/view?usp=sharing" target="_blank"><img src="1.png" alt="Projek 1" class="modern-card w-full"></a>
+                <a href="https://drive.google.com/file/d/1_KIPnRRldAkQnI-scDvKnhU50ucI8Pr9/view?usp=sharing" target="_blank"><img src="2.png" alt="Projek 2" class="modern-card w-full"></a>
+                <a href="https://drive.google.com/file/d/1JFUQxVeHNXkcA0pKUbUgOY3FfLL2Z7zL/view?usp=sharing" target="_blank"><img src="3.png" alt="Projek 1" class="modern-card w-full"></a>
+                <a href="https://drive.google.com/file/d/1DgwBMxeISiQrrzCxRDCtMIEFU0Ib53hQ/view?usp=sharing" target="_blank"><img src="4.png" alt="Projek 2" class="modern-card w-full"></a>
+                <a href="https://drive.google.com/file/d/1UeqGM4R6jLoAr78hBvwBAjfj5qlFrlFy/view?usp=sharing" target="_blank"><img src="5.png" alt="Projek 1" class="modern-card w-full"></a>
+                <a href="https://drive.google.com/file/d/1tAYC0cvLA1kOlzP1Lrp89fkcwLzUK4n9/view?usp=sharing" target="_blank"><img src="6.png" alt="Projek 2" class="modern-card w-full"></a>
+                <a href="https://tstar7.github.io/Starmoon-Labs/" target="_blank"><img src="7.png" alt="Projek 1" class="modern-card w-full"></a>
+                <a href="https://drive.google.com/file/d/1xGA98_0FmyROntcUNhq0HMLB1P1FU0ov/view?usp=sharing" target="_blank"><img src="8.png" alt="Projek 2" class="modern-card w-full"></a>
+                <a href="https://drive.google.com/file/d/1xYgddym8-uXnYLCTaGmSVqPfdEjGUeIJ/view?usp=sharing" target="_blank"><img src="9.png" alt="Projek 2" class="modern-card w-full"></a>
+            </div>
+        </section>
+        
+        <section id="sertifikat" class="mt-8">
+            <h2 class="text-2xl font-bold text-blue-400">Sertifikat</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+                <img src="11.jpg" alt="Sertifikat" class="modern-card w-full">
+                <img src="22.jpg" alt="Sertifikat" class="modern-card w-full">
+                <img src="33.jpg" alt="Sertifikat" class="modern-card w-full">
+                <img src="44.jpg" alt="Sertifikat" class="modern-card w-full">
+                <img src="55.jpg" alt="Sertifikat" class="modern-card w-full">
+                <img src="66.jpg" alt="Sertifikat" class="modern-card w-full">
+                <img src="77.jpg" alt="Sertifikat" class="modern-card w-full">
+                <img src="88.jpg" alt="Sertifikat" class="modern-card w-full">
+            </div>
+        </section>
+        
+        <section id="skill" class="mt-8">
+            <h2 class="text-2xl font-bold text-blue-400">Skill</h2>
+            <div class="grid grid-cols-3 sm:grid-cols-5 gap-4 mt-4">
+                <img src="html.png" alt="HTML" title="HTML" class="w-10">
+                <img src="css.png" alt="CSS" title="CSS" class="w-10">
+                <img src="js.png" alt="JavaScript" title="JS" class="w-10">
+                <img src="ppt.png" alt="Powerpoint" title="Powerpoint"  class="w-10">
+                <img src="word.png" alt="Word" title="Word" class="w-10">
+                <img src="excel.png" alt="Excel" title="Excel" class="w-10">
+                <img src="ai.png" alt="AI" title="AI" class="w-10">
+                <img src="canva.png" alt="Canva" title="canva" class="w-10">
+                <img src="drive.png" alt="Drive"  title="Drive" class="w-10">
+                <img src="google.png" alt="Workspace" title="Workspace" class="w-400" >
+            </div>
+        </section>
+
+        <section id="keterampilan" class="mt-8">
+            <h2 class="text-2xl font-bold text-blue-400">Keterampilan Teknis</h2>
+            <div class="mt-4 modern-card">
+                <ul class="text-gray-300 list-disc pl-5">
+                    <li>Penguasaan Microsoft Office & Google Workspace</li>
+                    <li>Manajemen data dan pengarsipan dokumen</li>
+                    <li>Penggunaan perangkat teknologi kantor</li>
+                    <li>Administrasi email dan komunikasi profesional</li>
+                    <li>Pengolahan data dan pembuatan laporan</li>
+                    <li>Keamanan dan privasi data</li>
+                    <li>Administrasi keuangan dasar</li>
+                </ul>
+            </div>
+        </section>        
+
+        <section id="keterampilan" class="mt-8">
+            <h2 class="text-2xl font-bold text-blue-400">Keterampilan Pendukung</h2>
+            <div class="mt-4 modern-card">
+                <ul class="text-gray-300 list-disc pl-5">
+                    <li>Manajemen waktu dan prioritas</li>
+                    <li>Kemampuan komunikasi yang baik</li>
+                    <li>Keterampilan interpersonal dan kerja tim</li>
+                    <li>Ketelitian dan perhatian terhadap detail</li>
+                    <li>Pemecahan masalah dan pengambilan keputusan</li>
+                    <li>Kemampuan multitasking dalam lingkungan kerja cepat</li>
+                    <li>Fleksibilitas dan adaptasi terhadap perubahan</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

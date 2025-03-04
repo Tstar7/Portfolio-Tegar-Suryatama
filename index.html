@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Tegar Suryatama</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="icon.png?v=1">
+    <style>
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(10px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 1s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Halaman Pertama -->
+    <div class="max-w-6xl w-full bg-white mx-auto p-10 mt-12 space-y-8 animate__animated fade-in shadow-lg rounded-lg">
+        <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-8 lg:space-y-0 lg:space-x-8">
+            <!-- Left Section: Teks Menyapa -->
+            <div class="flex-1 space-y-4 text-center lg:text-left">
+                <h1 class="text-3xl font-bold text-gray-800">Selamat Datang ✧⁠◝⁠(⁠⁰⁠▿⁠⁰⁠)⁠◜⁠✧</h1>
+                <p class="text-lg text-gray-600">
+                    Saya <strong>Tegar Suryatama</strong>.<br>
+                </p>
+                <p class="text-lg text-gray-600">
+                    Seorang fresh graduate dari <strong>Politeknik Negeri Sriwijaya</strong> jurusan <em>Manajemen Informatika</em> yang tertarik di bidang <em>Administrasi</em>.
+                </p>
+            </div>
+
+            <!-- Right Section: Foto Diri dengan Card dan Warna -->
+            <div class="flex-1 flex justify-center lg:justify-end items-center">
+                <div class="w-64 h-64 lg:w-80 lg:h-80 bg-blue-200 rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
+                    <img src="saya.jpeg" alt="Foto Diri" class="w-full h-full object-cover rounded-lg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Halaman Kedua: Background Diri (Tanpa Shadow dan Garis) -->
+    <div class="max-w-6xl w-full mx-auto p-10 mt-12 space-y-8 animate__animated fade-in">
+        <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-8 lg:space-y-0 lg:space-x-8">
+            <!-- Left Section: Quick Background (Tanpa Card) -->
+            <div class="flex-1 space-y-4 text-center lg:text-left">
+                <h1 class="text-3xl font-bold text-gray-800">Latar Belakang</h1>
+                <p class="text-lg text-gray-600">
+                    Saya seorang fresh graduate dengan keterampilan dalam Administrasi dan Manajemen Dokumen. Memiliki pengalaman dalam pengelolaan data, pengarsipan, dan pengoptimalan proses administrasi yang saya pelajari selama pendidikan dan magang.
+                </p>
+            </div>
+
+            <!-- Right Section: 3 Kolom Vertikal (Tempat Tinggal, Pengalaman Kerja, Roles) -->
+            <div class="flex-1 space-y-8">
+                <!-- Tempt Tinggal (Card) -->
+                <div class="p-6 bg-red-100 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                    <h2 class="text-2xl font-semibold text-gray-800">Pengalaman Magang</h2>
+                    <p class="text-gray-600 mt-2">Selama magang di <strong>PT PLN (Persero) Unit Induk Distribusi Sumatera Selatan, Jambi dan Bengkulu</strong> saya terlibat dalam pengelolaan arsip, pemrosesan permintaan logistik, dan administrasi operasional. Pengalaman ini memberi saya keterampilan dalam <strong>organisasi, ketelitian, dan kemampuan bekerja dalam tim</strong>.</p>
+                </div></strong>
+
+                <!-- Pengalaman Kerja (Card) -->
+                <div class="p-6 bg-orange-100 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                    <h2 class="text-2xl font-semibold text-gray-800">Pengalaman Freelancer</h2>
+                    <p class="text-gray-600 mt-2">Saya juga menjalankan usaha freelance <strong>Starmoon Labs</strong>, menawarkan layanan seperti pembuatan CV, pembuatan website, dan pengelolaan dokumen. Melalui usaha ini, saya mengasah kemampuan <strong>komunikasi dengan klien dan manajemen proyek</strong>.</p>
+                </div>
+
+                <!-- Roles (Card) -->
+                <div class="p-6 bg-amber-100 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                    <h2 class="text-2xl font-semibold text-gray-800">Roles</h2>
+                    <p class="text-gray-600 mt-2">Sebagai seorang yang memiliki keterampilan di bidang administrasi, saya fokus pada <strong>pengelolaan dokumen dan data</strong>, yang mencakup <strong>menyusun dan mengatur file, memproses surat-menyurat, serta mendukung tim dalam kelancaran operasional administratif.</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Halaman Ketiga: dengan Posisi Teks di Atas Kolom -->
+    <div class="max-w-6xl w-full mx-auto p-10 mt-12 space-y-8 animate__animated fade-in">
+        <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-8 lg:space-y-0 lg:space-x-8">
+            <!-- Left Section: 3 Kolom Vertikal (Tempat Tinggal, Pengalaman Kerja, Roles) -->
+            <div class="flex-1 space-y-8 order-2 lg:order-1">
+                <!-- Tempt Tinggal (Card) -->
+                <div class="p-6 bg-violet-100 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                    <h2 class="text-2xl font-semibold text-gray-800">Saya sangat suka belajar hal baru</h2>
+                    <p class="text-gray-600 mt-2">terutama dalam teknologi dan sistem administrasi, yang memotivasi saya untuk terus mengasah keterampilan.</p>
+                </div>
+
+                <!-- Pengalaman Kerja (Card) -->
+                <div class="p-6 bg-sky-100 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                    <h2 class="text-2xl font-semibold text-gray-800">Saya seorang freelancer</h2>
+                    <p class="text-gray-600 mt-2">Menjalankan usaha sendiri mengajarkan saya keterampilan manajemen waktu dan komunikasi yang lebih baik.</p>
+                </div>
+
+                <!-- Roles (Card) -->
+                <div class="p-6 bg-blue-100 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                    <h2 class="text-2xl font-semibold text-gray-800">Saya seorang yang sangat terorganisir</h2>
+                    <p class="text-gray-600 mt-2">Kebiasaan ini membuat saya efisien dalam pekerjaan, baik itu dalam pengelolaan dokumen maupun dalam kehidupan sehari-hari.</p>
+                </div>
+
+                    <!-- Roles (Card) -->
+                    <div class="p-6 bg-indigo-100 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <h2 class="text-2xl font-semibold text-gray-800">Saya senang bekerja dengan tim </h2>
+                        <p class="text-gray-600 mt-2">Berkolaborasi dengan orang lain memberi saya peluang untuk belajar hal baru dan memberikan solusi yang lebih baik bersama.</p>
+                    </div>
+            </div>
+
+            <!-- Right Section: Three Fun Facts (Teks) -->
+            <div class="flex-1 space-y-4 text-center lg:text-left order-1 lg:order-2">
+                <h1 class="text-3xl font-bold text-gray-800">Four Fun Facts</h1>
+                <p class="text-lg text-gray-600">
+                    Di bawah ini adalah beberapa fakta menarik tentang saya yang mungkin belum Anda ketahui:
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Halaman Keempat: Showcase Foto Proyek -->
+    <div class="max-w-6xl w-full mx-auto p-10 mt-12 space-y-8 animate__animated fade-in">
+        <div class="text-center">
+            <h1 class="text-3xl font-bold text-gray-800">Ini adalah tampilan dari proyek saya</h1>
+            <p class="text-lg text-gray-600 mt-4">Jelajahi beberapa proyek dengan mengklik gambar untuk melihat detail proyek:</p>
+        </div>
+
+        <!-- Grid untuk Menampilkan Foto Proyek -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+            <!-- Foto Proyek 1 -->
+            <div class="overflow-hidden rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
+                <a href="https://drive.google.com/file/d/1lqkADN1z9kAXznZHwnwEYmHLLJ7KbU1T/view?usp=drive_link" target="_blank">
+                    <img src="1.png" alt="Proyek 2" class="w-full h-64 object-cover">
+                </a>
+                <div class="p-4 bg-white">
+                    <h3 class="text-xl font-semibold text-gray-800">Portofolio Administrasi Kantor</h3>
+                    <p class="text-gray-600 mt-2">Menunjukkan kemampuan mengolah data, administrasi kepegawaian, serta pengarsipan dengan keterampilan <strong>Microsoft Office dan Google Suite</strong>.</p>
+                </div>
+            </div>
+            <!-- Foto Proyek 2 -->
+            <div class="overflow-hidden rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
+                <a href="https://drive.google.com/file/d/1qEXNNQcoQnxvB_rygFqZPtsVybQOiamN/view?usp=sharing" target="_blank">
+                    <img src="2.png" alt="Proyek 2" class="w-full h-64 object-cover">
+                </a>
+                <div class="p-4 bg-white">
+                    <h3 class="text-xl font-semibold text-gray-800">Portofolio Pengelolaan Data</h3>
+                    <p class="text-gray-600 mt-2">Menunjukkan kemampuan mengolah data dengan <strong>Excel, termasuk rumus, Pivot Table, dan Dashboard</strong> untuk laporan yang akurat dan sistematis.</p>
+                </div>
+            </div>
+            <!-- Foto Proyek 3 -->
+            <div class="overflow-hidden rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
+                <a href="https://drive.google.com/file/d/1DgwBMxeISiQrrzCxRDCtMIEFU0Ib53hQ/view?usp=sharing" target="_blank">
+                    <img src="3.png" alt="Proyek 2" class="w-full h-64 object-cover">
+                </a>
+                <div class="p-4 bg-white">
+                    <h3 class="text-xl font-semibold text-gray-800">Portofolio Desain Visual Canva</h3>
+                    <p class="text-gray-600 mt-2">Menunjukan kemampuan dalam membuat <strong>desain visual</strong> menggunakan Canva. Dengan berbagai elemen desain, termasuk template,</p>
+                </div>
+            </div>
+            <!-- Foto Proyek 4 -->
+            <div class="overflow-hidden rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
+                <a href="https://drive.google.com/file/d/1JFUQxVeHNXkcA0pKUbUgOY3FfLL2Z7zL/view?usp=sharing" target="_blank">
+                    <img src="4.png" alt="Proyek 2" class="w-full h-64 object-cover">
+                </a>
+                <div class="p-4 bg-white">
+                    <h3 class="text-xl font-semibold text-gray-800">Portofolio Laporan Akhir</h3>
+                    <p class="text-gray-600 mt-2">Menunjukkan kemampuan menyusun laporan akhir yang terstruktur, lengkap dengan analisis dan kesimpulan, menggunakan <strong>Microsoft Word atau Google Docs</strong>.</p>
+                </div>
+            </div>
+             <!-- Foto Proyek 5 -->
+             <div class="overflow-hidden rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
+                <a href="https://drive.google.com/file/d/1RC5aUHuyjuKUXPdOhHlenz00JH9AwEjS/view?usp=sharing" target="_blank">
+                    <img src="7.png" alt="Proyek 2" class="w-full h-64 object-cover">
+                </a>
+                <div class="p-4 bg-white">
+                    <h3 class="text-xl font-semibold text-gray-800">Freelance Starmoon Labs</h3>
+                    <p class="text-gray-600 mt-2">Layanan freelance Starmoon Labs meliputi pembuatan CV, website, joki tugas, pencarian jurnal, pengubahan file, dan pembuatan laporan KP/LA dengan hasil berkualitas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Halaman Kelima: Skill Penggunaan Aplikasi -->
+<div class="max-w-6xl w-full mx-auto p-10 mt-12 space-y-8 animate__animated fade-in">
+    <h1 class="text-3xl font-bold text-gray-800 text-center">Skill Penggunaan Aplikasi</h1>
+    
+    <!-- Grid Layout untuk Skill -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 mt-8">
+        <!-- Icon 1 -->
+        <div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform transition-transform duration-300 hover:scale-105">
+            <img src="microsoft.png" alt="Microsoft" class="w-16 h-16 mb-4">
+            <p class="text-xl font-semibold text-gray-800">Microsoft</p>
+            <p class="text-gray-600">Advanced</p>
+        </div>
+
+        <!-- Icon 2 -->
+        <div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform transition-transform duration-300 hover:scale-105">
+            <img src="word.png" alt="Word" class="w-16 h-16 mb-4">
+            <p class="text-xl font-semibold text-gray-800">Word</p>
+            <p class="text-gray-600">Advanced</p>
+        </div>
+
+        <!-- Icon 3 -->
+        <div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform transition-transform duration-300 hover:scale-105">
+            <img src="excel.png" alt="Excel" class="w-16 h-16 mb-4">
+            <p class="text-xl font-semibold text-gray-800">Excel</p>
+            <p class="text-gray-600">Advanced</p>
+        </div>
+
+        <!-- Icon 4 -->
+        <div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform transition-transform duration-300 hover:scale-105">
+            <img src="ppt.png" alt="PowerPoint" class="w-16 h-16 mb-4">
+            <p class="text-xl font-semibold text-gray-800">PowerPoint</p>
+            <p class="text-gray-600">Advanced</p>
+        </div>
+
+       <!-- Icon 1 -->
+<div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform transition-transform duration-300 hover:scale-105">
+    <img src="onenote.png" alt="OneNote" class="w-16 h-16 mb-4">
+    <p class="text-xl font-semibold text-gray-800">OneNote</p>
+    <p class="text-gray-600">Intermediate </p>
+</div>
+
+<!-- Icon 2 -->
+<div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform transition-transform duration-300 hover:scale-105">
+    <img src="outlook.png" alt="Outlook" class="w-16 h-16 mb-4">
+    <p class="text-xl font-semibold text-gray-800">Outlook</p>
+    <p class="text-gray-600">Advanced</p>
+</div>
+
+<!-- Icon 3 -->
+<div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform transition-transform duration-300 hover:scale-105">
+    <img src="teams.png" alt="Teams" class="w-16 h-16 mb-4">
+    <p class="text-xl font-semibold text-gray-800">Teams</p>
+    <p class="text-gray-600">Intermediate </p>
+</div>
+
+<!-- Icon 4 -->
+<div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform transition-transform duration-300 hover:scale-105">
+    <img src="onedrive.png" alt="OneDrive" class="w-16 h-16 mb-4">
+    <p class="text-xl font-semibold text-gray-800">OneDrive</p>
+    <p class="text-gray-600">Advanced</p>
+</div>
+
+<!-- Icon 5 -->
+<div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform transition-transform duration-300 hover:scale-105">
+    <img src="docs.png" alt="Docs" class="w-16 h-16 mb-4">
+    <p class="text-xl font-semibold text-gray-800">Docs</p>
+    <p class="text-gray-600">Advanced</p>
+</div>
+
+<!-- Icon 6 -->
+<div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform transition-transform duration-300 hover:scale-105">
+    <img src="google-sheets.png" alt="Sheets" class="w-16 h-16 mb-4">
+    <p class="text-xl font-semibold text-gray-800">Sheets</p>
+    <p class="text-gray-600">Advanced</p>
+</div>
+
+<!-- Icon 7 -->
+<div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform transition-transform duration-300 hover:scale-105">
+    <img src="google-slides.png" alt="Slides" class="w-16 h-16 mb-4">
+    <p class="text-xl font-semibold text-gray-800">Slides</p>
+    <p class="text-gray-600">Advanced</p>
+</div>
+
+<!-- Icon 8 -->
+<div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform transition-transform duration-300 hover:scale-105">
+    <img src="google-forms.png" alt="Forms" class="w-16 h-16 mb-4">
+    <p class="text-xl font-semibold text-gray-800">Forms</p>
+    <p class="text-gray-600">Advanced</p>
+</div>
+
+<!-- Icon 9 -->
+<div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform transition-transform duration-300 hover:scale-105">
+    <img src="drive.png" alt="Drive" class="w-16 h-16 mb-4">
+    <p class="text-xl font-semibold text-gray-800">Drive</p>
+    <p class="text-gray-600">Advanced</p>
+</div>
+
+<!-- Icon 10 -->
+<div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform transition-transform duration-300 hover:scale-105">
+    <img src="gmail.png" alt="Gmail" class="w-16 h-16 mb-4">
+    <p class="text-xl font-semibold text-gray-800">Gmail</p>
+    <p class="text-gray-600">Advanced</p>
+</div>
+
+<!-- Icon 11 -->
+<div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform transition-transform duration-300 hover:scale-105">
+    <img src="calendar.png" alt="Calendar" class="w-16 h-16 mb-4">
+    <p class="text-xl font-semibold text-gray-800">Calendar</p>
+    <p class="text-gray-600">Advanced</p>
+</div>
+
+<!-- Icon 12 -->
+<div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform transition-transform duration-300 hover:scale-105">
+    <img src="canva.png" alt="Canva" class="w-16 h-16 mb-4">
+    <p class="text-xl font-semibold text-gray-800">Canva</p>
+    <p class="text-gray-600">Advanced</p>
+</div>
+
+<!-- Icon 13 -->
+<div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform transition-transform duration-300 hover:scale-105">
+    <img src="capcut.png" alt="CapCut" class="w-16 h-16 mb-4">
+    <p class="text-xl font-semibold text-gray-800">CapCut</p>
+    <p class="text-gray-600">Intermediate </p>
+</div>
+
+<!-- Icon 14 -->
+<div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform transition-transform duration-300 hover:scale-105">
+    <img src="chatgpt.png" alt="ChatGPT" class="w-16 h-16 mb-4">
+    <p class="text-xl font-semibold text-gray-800">ChatGPT</p>
+    <p class="text-gray-600">Advanced</p>
+</div>
+
+        <!-- Add more icons as needed -->
+    </div>
+</div>
+
+<!-- Halaman Keenam: Sertifikat -->
+<div class="max-w-6xl w-full mx-auto p-10 mt-12 space-y-8 animate__animated fade-in">
+    <h1 class="text-3xl font-bold text-gray-800 text-center">Sertifikat</h1>
+
+       <!-- Sertifikat 1 (Posisi Gambar di Kanan) -->
+    <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-8 lg:space-y-0 lg:space-x-8 mt-8">
+        <!-- Gambar Sertifikat Kanan -->
+        <div class="flex-1 order-1 lg:order-2">
+            <img src="55.jpg" alt="Sertifikat 2" class="w-full rounded-lg shadow-lg">
+        </div>
+
+        <!-- Deskripsi Sertifikat Kiri -->
+        <div class="flex-1 space-y-4 text-center lg:text-left order-2 lg:order-1">
+            <h2 class="text-2xl font-semibold text-gray-800">Microsoft Excel, Word And PowerPoint</h2>
+            <p class="text-lg text-gray-600">Pemberi Sertifikat: <strong>MySkill</strong></p>
+            <p class="text-lg text-gray-600">Tanggal Penerbitan: <strong>18 - 02 - 2025</strong></p>
+            <p class="text-gray-600"> Sertifikat ini menunjukkan keterampilan saya dalam menggunakan Excel, Word, dan PowerPoint. Dengan kemampuan ini, saya dapat mengolah data, membuat dokumen profesional, dan merancang presentasi yang efektif.</p>
+        </div>
+    </div>
+
+    <!-- Sertifikat 2 -->
+    <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-8 lg:space-y-0 lg:space-x-8 mt-8">
+        <!-- Gambar Sertifikat Kiri -->
+        <div class="flex-1">
+            <img src="11.jpg" alt="Sertifikat 1" class="w-full rounded-lg shadow-lg">
+        </div>
+
+        <!-- Deskripsi Sertifikat Kanan -->
+        <div class="flex-1 space-y-4 text-center lg:text-left">
+            <h2 class="text-2xl font-semibold text-gray-800">Artificial Intelligence</h2>
+            <p class="text-lg text-gray-600">Pemberi Sertifikat: <strong>MySkill</strong></p>
+            <p class="text-lg text-gray-600">Tanggal Penerbitan: <strong>27 - 11 - 2024</strong></p>
+            <p class="text-gray-600"> Sertifikat ini menunjukkan pemahaman saya tentang Artificial Intelligence. Saya dapat berkolaborasi dengan teknologi AI untuk mengembangkan solusi otomatisasi yang efisien dan meningkatkan pengambilan keputusan.</p>
+        </div>
+    </div>
+    
+
+          <!-- Sertifikat 1 (Posisi Gambar di Kanan) -->
+          <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-8 lg:space-y-0 lg:space-x-8 mt-8">
+            <!-- Gambar Sertifikat Kanan -->
+            <div class="flex-1 order-1 lg:order-2">
+                <img src="33.jpg" alt="Sertifikat 2" class="w-full rounded-lg shadow-lg">
+            </div>
+    
+            <!-- Deskripsi Sertifikat Kiri -->
+            <div class="flex-1 space-y-4 text-center lg:text-left order-2 lg:order-1">
+                <h2 class="text-2xl font-semibold text-gray-800">Basic Accounting</h2>
+                <p class="text-lg text-gray-600">Pemberi Sertifikat: <strong>MySkill</strong></p>
+                <p class="text-lg text-gray-600">Tanggal Penerbitan: <strong>29 - 11 - 2024</strong></p>
+                <p class="text-gray-600">Sertifikat ini menunjukkan pemahaman saya dalam prinsip dasar akuntansi. Keterampilan ini membantu saya dalam menyusun laporan keuangan dan mengelola transaksi secara efektif.</p>
+            </div>
+        </div>
+    
+        <!-- Sertifikat 2 -->
+        <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-8 lg:space-y-0 lg:space-x-8 mt-8">
+            <!-- Gambar Sertifikat Kiri -->
+            <div class="flex-1">
+                <img src="22.jpg" alt="Sertifikat 1" class="w-full rounded-lg shadow-lg">
+            </div>
+    
+            <!-- Deskripsi Sertifikat Kanan -->
+            <div class="flex-1 space-y-4 text-center lg:text-left">
+                <h2 class="text-2xl font-semibold text-gray-800">Basic Data</h2>
+                <p class="text-lg text-gray-600">Pemberi Sertifikat: <strong>MySkill</strong></p>
+                <p class="text-lg text-gray-600">Tanggal Penerbitan: <strong>29 - 10 - 2024</strong></p>
+                <p class="text-gray-600">Sertifikat ini menunjukkan keterampilan dasar saya dalam mengelola dan menganalisis data. Saya dapat mengolah informasi dengan tepat untuk mendukung pengambilan keputusan yang lebih baik.</p>
+            </div>
+        </div>
+
+            <!-- Sertifikat 1 (Posisi Gambar di Kanan) -->
+    <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-8 lg:space-y-0 lg:space-x-8 mt-8">
+        <!-- Gambar Sertifikat Kanan -->
+        <div class="flex-1 order-1 lg:order-2">
+            <img src="44.jpg" alt="Sertifikat 2" class="w-full rounded-lg shadow-lg">
+        </div>
+
+        <!-- Deskripsi Sertifikat Kiri -->
+        <div class="flex-1 space-y-4 text-center lg:text-left order-2 lg:order-1">
+            <h2 class="text-2xl font-semibold text-gray-800">Canva for Design</h2>
+            <p class="text-lg text-gray-600">Pemberi Sertifikat: <strong>MySkill</strong></p>
+            <p class="text-lg text-gray-600">Tanggal Penerbitan: <strong>16 - 09 - 2024</strong></p>
+            <p class="text-gray-600"> Sertifikat ini menunjukkan kemampuan saya dalam menggunakan Canva untuk desain grafis. Saya dapat membuat materi visual yang menarik, seperti poster, presentasi, dan media sosial, untuk keperluan profesional.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Halaman Ketujuh: Soft Skills -->
+<div class="max-w-6xl w-full mx-auto p-10 mt-12 space-y-8 animate__animated fade-in">
+    <h1 class="text-3xl font-bold text-gray-800 text-center">Keterampilan Lunak</h1>
+
+    <!-- Soft Skill 1: Manajemen Waktu -->
+    <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-8 lg:space-y-0 lg:space-x-8 mt-8">
+        <div class="flex-1 relative bg-green-100 rounded-lg py-6 px-8 flex items-center shadow-xl">
+            <div class="text-left flex-1">
+                <h2 class="text-2xl font-semibold text-gray-800">Manajemen Waktu</h2>
+                <p class="text-lg text-gray-600">Mampu menyusun jadwal dan menyelesaikan tugas secara efisien.</p>
+            </div>
+            <img src="a (1).png" alt="Manajemen Waktu" class="w-32 h-32 object-cover rounded-lg hidden lg:block">
+        </div>
+    </div>
+
+    <!-- Soft Skill 2: Komunikasi Efektif -->
+    <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-8 lg:space-y-0 lg:space-x-8 mt-8">
+        <div class="flex-1 relative bg-blue-100 rounded-lg py-6 px-8 flex items-center shadow-xl">
+            <div class="text-left flex-1">
+                <h2 class="text-2xl font-semibold text-gray-800">Komunikasi Efektif</h2>
+                <p class="text-lg text-gray-600">Terampil dalam berinteraksi dengan tim dan pihak eksternal.</p>
+            </div>
+            <img src="a (2).png" alt="Komunikasi" class="w-32 h-32 object-cover rounded-lg hidden lg:block">
+        </div>
+    </div>
+
+    <!-- Soft Skill 3: Problem Solving -->
+    <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-8 lg:space-y-0 lg:space-x-8 mt-8">
+        <div class="flex-1 relative bg-yellow-100 rounded-lg py-6 px-8 flex items-center shadow-xl">
+            <div class="text-left flex-1">
+                <h2 class="text-2xl font-semibold text-gray-800">Problem Solving</h2>
+                <p class="text-lg text-gray-600">Cepat dalam mencari solusi atas kendala administratif.</p>
+            </div>
+            <img src="a (3).png" alt="Problem Solving" class="w-32 h-32 object-cover rounded-lg hidden lg:block">
+        </div>
+    </div>
+
+    <!-- Soft Skill 4: Detail-Oriented -->
+    <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-8 lg:space-y-0 lg:space-x-8 mt-8">
+        <div class="flex-1 relative bg-purple-100 rounded-lg py-6 px-8 flex items-center shadow-xl">
+            <div class="text-left flex-1">
+                <h2 class="text-2xl font-semibold text-gray-800">Detail-Oriented</h2>
+                <p class="text-lg text-gray-600">Teliti dalam mengelola data dan dokumen penting.</p>
+            </div>
+            <img src="a (4).png" alt="Detail-Oriented" class="w-32 h-32 object-cover rounded-lg hidden lg:block">
+        </div>
+    </div>
+
+    <!-- Soft Skill 5: Adaptasi Teknologi -->
+    <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-8 lg:space-y-0 lg:space-x-8 mt-8">
+        <div class="flex-1 relative bg-orange-100 rounded-lg py-6 px-8 flex items-center shadow-xl">
+            <div class="text-left flex-1">
+                <h2 class="text-2xl font-semibold text-gray-800">Adaptasi Teknologi</h2>
+                <p class="text-lg text-gray-600">Cepat belajar dan menguasai perangkat lunak baru.</p>
+            </div>
+            <img src="a (5).png" alt="Adaptasi Teknologi" class="w-32 h-32 object-cover rounded-lg hidden lg:block">
+        </div>
+    </div>
+
+    <!-- Soft Skill 6: Kerja Sama Tim -->
+    <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-8 lg:space-y-0 lg:space-x-8 mt-8">
+        <div class="flex-1 relative bg-red-100 rounded-lg py-6 px-8 flex items-center shadow-xl">
+            <div class="text-left flex-1">
+                <h2 class="text-2xl font-semibold text-gray-800">Kerja Sama Tim</h2>
+                <p class="text-lg text-gray-600">Mampu bekerja dalam tim dengan komunikasi dan koordinasi yang baik.</p>
+            </div>
+            <img src="a (6).png" alt="Kerja Sama Tim" class="w-32 h-32 object-cover rounded-lg hidden lg:block">
+        </div>
+    </div>
+
+    <!-- Soft Skill 7: Fleksibilitas -->
+    <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-8 lg:space-y-0 lg:space-x-8 mt-8">
+        <div class="flex-1 relative bg-teal-100 rounded-lg py-6 px-8 flex items-center shadow-xl">
+            <div class="text-left flex-1">
+                <h2 class="text-2xl font-semibold text-gray-800">Fleksibilitas</h2>
+                <p class="text-lg text-gray-600">Mampu beradaptasi dengan berbagai tugas dan tantangan.</p>
+            </div>
+            <img src="a (7).png" alt="Fleksibilitas" class="w-32 h-32 object-cover rounded-lg hidden lg:block">
+        </div>
+    </div>
+</div>
+
+
+
+
+    <!-- Halaman Kedua: Background Diri (Tanpa Shadow dan Garis) -->
+<div class="max-w-6xl w-full bg-green-100 mx-auto p-10 mt-12 space-y-8 animate__animated fade-in">
+    <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-8 lg:space-y-0 lg:space-x-8">
+        <!-- Left Section: Quick Background (Tanpa Card) -->
+        <div class="flex-1 space-y-4 text-center lg:text-left">
+            <h1 class="text-3xl font-bold text-gray-800">Excited to be part of the team ヽ⁠(⁠｡⁠◕⁠o⁠◕⁠｡⁠)⁠ﾉ⁠</h1>
+            <p class="text-lg text-gray-600">
+                Saya sangat antusias untuk bergabung dan bekerja dengan tim yang penuh semangat. Dengan pengalaman saya di bidang Administrasi dan Manajemen Dokumen, saya berharap dapat memberikan kontribusi yang berarti dan berkembang bersama tim dalam setiap tantangan yang ada.
+            </p>
+        </div>
+
+        <!-- Right Section: 3 Kolom Vertikal (Tempat Tinggal, Pengalaman Kerja, Roles) -->
+        <div class="flex-1 space-y-8">
+            <!-- Tempt Tinggal (Card) -->
+            <div class="p-6 bg-white rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                <h2 class="text-2xl font-semibold text-gray-800">Email</h2>
+                <p class="text-gray-600 mt-2">tegarsuryatama73@gmail.com</p>
+            </div>
+
+            <!-- Pengalaman Kerja (Card) -->
+            <div class="p-6 bg-white rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                <h2 class="text-2xl font-semibold text-gray-800">My CV</h2>
+                <p class="text-gray-600 mt-2">Open CV</p>
+                <!-- Button untuk Download PDF CV -->
+                <a href="CV_Tegar Suryatama.pdf" download="CV_Tegar Suryatama" class="mt-4 inline-block px-6 py-3 bg-emerald-300 text-white text-lg rounded-lg hover:bg-blue-600 transition duration-300">Download CV</a>
+            </div>
+
+            <!-- Roles (Card) -->
+            <div class="p-6 bg-white rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                <h2 class="text-2xl font-semibold text-gray-800">My Socials</h2>
+                <div class="flex justify-start space-x-4 mt-4">
+                    <!-- Ikon Sosial Media -->
+                    <a href="https://www.instagram.com/starmoon1407/?igsh=MWhob29tN3U0OXo0ZQ%3D%3D#" target="_blank">
+                        <img src="ig.png" alt="Instagram" class="w-8 h-8">
+                    </a>
+                    <a href="https://www.linkedin.com/in/tegar-suryatama-102b66221" target="_blank">
+                        <img src="link.png" alt="LinkedIn" class="w-8 h-8">
+                    </a>
+                    <a href="https://tstar7.github.io/Starmoon-Labs/" target="_blank">
+                        <img src="bintang.png" alt="Starmoon Labs" class="w-8 h-8">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

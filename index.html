@@ -16,47 +16,10 @@
             animation: fadeIn 1s ease-out;
         }
 
-        #loading {
-  position: fixed;
-  top: 0; left: 0; width: 100%; height: 100%;
-  background: #FBFBFB;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  z-index: 50;
-}
-.progress-bar {
-  width: 80%;
-  height: 10px;
-  background-color: #A6AEBF;
-  border-radius: 10px;
-  margin-top: 20px;
-  overflow: hidden;
-}
-.progress {
-  height: 100%;
-  background-color: #295F98;
-  width: 0;
-  border-radius: 10px;
-  animation: loading 15s infinite;
-}
-@keyframes loading {
-  0% { width: 0; }
-  100% { width: 100%; }
-}
 
     </style>
 </head>
 <body class="bg-gray-100">
-
-     <div id="loading">
-        <h1 class="text-4xl font-bold text-slate-500 animate-bounce">Loading...</h1>
-        <div class="progress-bar">
-          <div class="progress"></div>
-        </div>
-        <div class="heart heart-spin" style="top: 40px; left: 40px;"></div>
-      </div>
 
     <!-- Halaman Pertama -->
     <div class="max-w-6xl w-full bg-white mx-auto p-10 mt-12 space-y-8 animate__animated fade-in shadow-lg rounded-lg">

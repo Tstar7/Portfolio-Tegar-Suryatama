@@ -609,7 +609,7 @@
             <div class="p-6 bg-white rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
                 <h2 class="text-2xl font-semibold text-gray-800">📄CV</h2>
                 <!-- Button untuk Download PDF CV -->
-                <a href="CV_Tegar Suryatama.pdf" download="CV_Tegar Suryatama" class="mt-4 inline-block px-6 py-3 bg-emerald-300 text-white text-lg rounded-lg hover:bg-blue-600 transition duration-300">Open <i class='bx bxs-door-open' ></i></a>
+                <a href="CV_Tegar Suryatama.pdf" download="CV_Tegar Suryatama" class="mt-4 inline-block px-6 py-3 bg-emerald-300 text-white text-lg rounded-lg hover:bg-green-600 transition duration-300">Open <i class='bx bxs-door-open' ></i></a>
             </div>
 
             <!-- Roles (Card) -->
@@ -628,18 +628,72 @@
                     </a>
                 </div>
             </div>
-        </div>
-    </div>
+
+           <!-- Tombol untuk HRD -->
+<div class="text-center mt-8">
+  <button onclick="bukaHrdModal();confettiEffect();" 
+    class="px-6 py-3 bg-green-400 text-white rounded-xl shadow-lg hover:bg-green-600 transition">
+    🌟 Klik Jika HRD Sudah Melihat
+  </button>
 </div>
 
-    <script>
-window.onload = function() {
-  setTimeout(() => {
-    document.getElementById('loading').style.display = 'none';
-  }, 15000);  // loading time adjusted to 15 seconds
-  startSlideshow();
-  setInterval(createHeart, 300);
-}
+<!-- Modal HRD -->
+<div id="hrdModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+  <div class="bg-white p-6 rounded-xl shadow-xl max-w-md text-center relative">
+    <button onclick="tutupHrdModal()" class="absolute top-2 right-3 text-blue-600 font-bold text-xl">&times;</button>
+    
+    <h2 class="text-xl font-bold text-gray-500 mb-4">Terima kasih Bapak/Ibu HRD</h2>
+    
+    <!-- GIF -->
+    <img src="https://media.tenor.com/Esi-teXJmyUAAAAi/laphie.gif" 
+         alt="GIF ucapan terima kasih" 
+         class="w-28 h-28 mx-auto mb-4 rounded-lg">
+    
+    <p class="text-gray-700 leading-relaxed">
+      Saya sangat menghargai waktu Anda untuk melihat portofolio ini.  
+      Semoga kesempatan baik ini bisa berlanjut ke tahap diskusi lebih lanjut ✨ <br><br> 🚀 Saya siap memberikan kontribusi terbaik untuk perusahaan Anda!
+    </p>
+  </div>
+</div>
+
+<!-- Script Modal + Sparkle -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script>
+  function bukaHrdModal() {
+    document.getElementById("hrdModal").classList.remove("hidden");
+  }
+  function tutupHrdModal() {
+    document.getElementById("hrdModal").classList.add("hidden");
+  }
+
+  function confettiEffect() {
+    const duration = 2 * 1000;
+    const animationEnd = Date.now() + duration;
+    const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 9999 };
+
+    function randomInRange(min, max) {
+      return Math.random() * (max - min) + min;
+    }
+
+    const interval = setInterval(function() {
+      const timeLeft = animationEnd - Date.now();
+
+      if (timeLeft <= 0) {
+        return clearInterval(interval);
+      }
+
+      const particleCount = 50 * (timeLeft / duration);
+
+      confetti(Object.assign({}, defaults, {
+        particleCount,
+        origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 }
+      }));
+      confetti(Object.assign({}, defaults, {
+        particleCount,
+        origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 }
+      }));
+    }, 250);
+  }
 </script>
 
 </body>

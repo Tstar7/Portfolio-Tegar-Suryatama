@@ -78,40 +78,101 @@
 </div>
 
 
-   <!-- Halaman Kedua: Background Diri (Tanpa Shadow dan Garis) -->
-<div class="max-w-6xl w-full mx-auto p-10 mt-12 space-y-8 animate__animated fade-in">
-  <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-8 lg:space-y-0 lg:space-x-8">
-    <!-- Left Section: Quick Background (Tanpa Card) -->
+<!-- Halaman Kedua: Background Diri (Responsif & Rapi) -->
+<div class="max-w-6xl w-full mx-auto px-6 sm:px-10 py-10 mt-12 space-y-10 animate__animated fade-in">
+
+  <!-- Bagian Atas: Latar Belakang + GIF -->
+  <div class="flex flex-col lg:flex-row items-center lg:items-start gap-10">
+    <!-- Left Section -->
     <div class="flex-1 space-y-4 text-center lg:text-left">
       <h1 class="text-3xl font-bold text-gray-800">Latar Belakang</h1>
 
-    <!-- GIF di sini -->
-<div class="flex justify-center my-4">
-  <img src="https://media1.tenor.com/m/XKwzkocGdvYAAAAC/cat-cat-meme.gif" 
-       alt="Cat Meme" 
-       class="w-50 sm:w-50 md:w-60 lg:w-60 h-auto mx-auto">
-</div>
+      <!-- GIF -->
+      <div class="flex justify-center lg:justify-start my-4">
+        <img src="https://media1.tenor.com/m/XKwzkocGdvYAAAAC/cat-cat-meme.gif" 
+             alt="Cat Meme" 
+             class="w-40 sm:w-48 md:w-56 lg:w-60 h-auto rounded-lg shadow-md">
+      </div>
 
-      <p class="text-lg text-gray-600 text-justify">
+      <p class="text-lg text-gray-600 text-justify leading-relaxed">
         Saya lulusan D3 Manajemen Informatika dari Politeknik Negeri Sriwijaya. Selain di bidang IT, saya juga antusias menjajaki peluang di administrasi, pengelolaan data, dan peran lintas fungsi. Saya mudah beradaptasi, cepat belajar, dan senang mengeksplorasi hal baru untuk mendukung tim maupun perusahaan.
       </p>
     </div>
 
-    <!-- Right Section: 3 Kolom Vertikal (Tempat Tinggal, Pengalaman Kerja, Roles) -->
-    <div class="flex-1 space-y-8">
-      <!-- Tempt Tinggal (Card) -->
-      <div class="p-6 bg-emerald-50 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
-        <h2 class="text-2xl font-semibold text-gray-800">Pengalaman Magang</h2>
-        <p class="text-gray-600 mt-2 text-justify">Saya pernah magang 3 bulan di PT PLN (Persero) UID S2JB, dengan tugas pengelolaan arsip, logistik, dan administrasi operasional harian. Pengalaman ini mengasah ketelitian, kerapian, dan kemampuan kerja tim saya.</p>
-      </div></strong>
-
-      <!-- Pengalaman Kerja (Card) -->
-      <div class="p-6 bg-teal-100 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
-        <h2 class="text-2xl font-semibold text-gray-800">Pengalaman Freelance</h2>
-        <p class="text-gray-600 mt-2 text-justify">Saya mendirikan usaha mandiri bernama Starmoon Labs yang telah berjalan selama lebih dari 1 tahun. Usaha ini menyediakan layanan digital seperti pembuatan CV, website, pengelolaan dokumen, serta berbagai kebutuhan lain sesuai permintaan klien. Melalui pengalaman ini, saya mengembangkan keterampilan komunikasi, manajemen waktu, dan penyelesaian proyek secara profesional.</p>
+    <!-- Right Section: Timeline -->
+    <div class="relative border-l-4 border-emerald-500 pl-6 space-y-10 w-full lg:w-1/2">
+      
+      <!-- Tahun 2022 -->
+      <div class="relative">
+        <div class="absolute -left-[37px] bg-emerald-500 w-6 h-6 rounded-full flex items-center justify-center text-white font-semibold text-xs sm:text-sm">
+        </div>
+        <div class="p-5 sm:p-6 bg-emerald-50 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+          <h2 class="text-xl sm:text-2xl font-semibold text-gray-800">Magang – PT PLN (Persero) UID S2JB</h2>
+          <p class="text-sm text-gray-500 italic mt-1">Agustus – November 2023</p>
+<ul class="list-disc pl-4 text-gray-600 mt-3 text-justify leading-relaxed space-y-1">
+  <li>Melakukan pengelolaan arsip dan dokumen internal secara teratur dan sistematis.</li>
+  <li>Membantu proses logistik, termasuk pencatatan dan distribusi barang operasional.</li>
+  <li>Menangani administrasi kegiatan operasional harian di lingkungan kantor.</li>
+  <li>Berkoordinasi dengan tim untuk memastikan kelancaran pekerjaan harian.</li>
+  <li>Pengalaman ini mengasah ketelitian, kerapian, dan kemampuan kerja sama tim.</li>
+</ul>
+        </div>
       </div>
 
+      <!-- Tahun 2024 -->
+      <div class="relative">
+        <div class="absolute -left-[37px] bg-emerald-500 w-6 h-6 rounded-full flex items-center justify-center text-white font-semibold text-xs sm:text-sm">
+        </div>
+        <div class="p-5 sm:p-6 bg-emerald-50 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+          <h2 class="text-xl sm:text-2xl font-semibold text-gray-800">Freelance – Starmoon Labs</h2>
+          <p class="text-sm text-gray-500 italic mt-1">2024 – Sekarang</p>
+     <ul class="grid gap-1 text-gray-600 mt-3 text-justify leading-relaxed">
+  <li class="flex items-start"><span class="mr-2">•</span><span>Mendirikan dan mengelola usaha mandiri bernama Starmoon Labs yang telah berjalan lebih dari satu tahun.</span></li>
+  <li class="flex items-start"><span class="mr-2">•</span><span>Menyediakan layanan digital seperti pembuatan CV, website, pengelolaan dokumen, dan berbagai kebutuhan lain sesuai permintaan klien.</span></li>
+  <li class="flex items-start"><span class="mr-2">•</span><span>Mengembangkan keterampilan komunikasi, manajemen waktu, dan penyelesaian proyek secara profesional melalui pengalaman kerja langsung dengan klien.</span></li>
+</ul>
+        </div>
+      </div>
+
+       <!-- Tahun 2025: Food Handler -->
+      <div class="relative">
+        <div class="absolute -left-[37px] bg-emerald-500 w-6 h-6 rounded-full flex items-center justify-center text-white font-semibold text-xs sm:text-sm">
+        </div>
+        <div class="p-5 sm:p-6 bg-orange-50 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+          <h2 class="text-xl sm:text-2xl font-semibold text-gray-800">Food Handler – Koperasi Wanita Petra RU III Plaju</h2>
+          <p class="text-sm text-gray-500 italic mt-1">Agustus – Oktober 2025</p>
+         <ul class="grid gap-1 text-gray-600 mt-3 text-justify leading-relaxed">
+  <li class="flex items-start"><span class="mr-2">•</span><span>Menyiapkan dan mengemas makanan untuk karyawan Pertamina RU III Plaju.</span></li>
+  <li class="flex items-start"><span class="mr-2">•</span><span>Menjaga kebersihan, kerapian, dan kualitas makanan sebelum disajikan.</span></li>
+  <li class="flex items-start"><span class="mr-2">•</span><span>Mengantarkan dan melayani makan siang serta makan malam di area kilang Pertamina.</span></li>
+  <li class="flex items-start"><span class="mr-2">•</span><span>Bekerja sama dengan tim dapur untuk memastikan pelayanan berjalan tepat waktu dan efisien.</span></li>
+  <li class="flex items-start"><span class="mr-2">•</span><span>Memastikan standar kebersihan dan keamanan makanan sesuai prosedur koperasi.</span></li>
+</ul>
+        </div>
+      </div>
+
+      <!-- Tahun 2025: Inventory Officer -->
+      <div class="relative">
+        <div class="absolute -left-[37px] bg-emerald-500 w-6 h-6 rounded-full flex items-center justify-center text-white font-semibold text-xs sm:text-sm">
+          
+        </div>
+  <div class="p-5 sm:p-6 bg-amber-50 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+  <h2 class="text-xl sm:text-2xl font-semibold text-gray-800">Inventory Officer – Koperasi Wanita Petra RU III Plaju</h2>
+  <p class="text-sm text-gray-500 italic mt-1">Oktober 2025 – Sekarang</p>
+
+  <ul class="grid gap-1 text-gray-600 mt-3 text-justify leading-relaxed">
+    <li class="flex items-start"><span class="mr-2">•</span><span>Melakukan pencatatan dan pembaruan data stok barang menggunakan Zahir Accounting.</span></li>
+    <li class="flex items-start"><span class="mr-2">•</span><span>Mengawasi keluar-masuk barang inventaris serta memastikan data sesuai dengan kondisi fisik gudang.</span></li>
+    <li class="flex items-start"><span class="mr-2">•</span><span>Menyusun laporan logistik dan distribusi barang secara berkala untuk mendukung operasional koperasi.</span></li>
+    <li class="flex items-start"><span class="mr-2">•</span><span>Berkoordinasi dengan tim keuangan dan dapur untuk memastikan ketersediaan bahan serta kelancaran rantai pasokan.</span></li>
+    <li class="flex items-start"><span class="mr-2">•</span><span>Mengembangkan keterampilan dalam manajemen rantai pasokan, analisis data, dan pelaporan inventaris yang efisien.</span></li>
+  </ul>
+</div>
     </div>
+  </div>
+</div>
+
+
   </div>
 </div>
 
@@ -400,13 +461,13 @@
 
         <!-- Notion -->
         <div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform transition-transform duration-300 hover:scale-105">
-            <img src="trello.png" alt="Notion" class="w-16 h-16 mb-4">
-            <p class="text-xl font-semibold text-gray-800">Trello</p>
+            <img src="notion.png" alt="Notion" class="w-16 h-16 mb-4">
+            <p class="text-xl font-semibold text-gray-800">Notion</p>
             <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
                 <div class="bg-green-500 h-2.5 rounded-full w-5/6"></div>
             </div>
             <p class="text-xs text-gray-500 mt-1">Advanced (80%)</p>
-            <p class="text-gray-500 text-sm mt-2 text-justify">Memanfaatkan Trello secara terstruktur untuk manajemen informasi, kolaborasi digital, dan pengelolaan workflow secara efisien.</p>
+            <p class="text-gray-500 text-sm mt-2 text-justify">Memanfaatkan Notion secara terstruktur untuk manajemen informasi, kolaborasi digital, dan pengelolaan workflow secara efisien.</p>
         </div>
 
            <!-- VSC -->
@@ -439,7 +500,6 @@
             <h2 class="text-2xl font-semibold text-gray-800">Microsoft Excel, Word And PowerPoint</h2>
             <p class="text-lg text-gray-600">Pemberi Sertifikat: <strong>MySkill</strong></p>
             <p class="text-lg text-gray-600">Tanggal Penerbitan: <strong>18 - 02 - 2025</strong></p>
-            <p class="text-gray-600 text-justify"> Sertifikat ini menunjukkan keterampilan saya dalam menggunakan Excel, Word, dan PowerPoint. Dengan kemampuan ini, saya dapat mengolah data, membuat dokumen profesional, dan merancang presentasi yang efektif.</p>
         </div>
     </div>
 
@@ -455,7 +515,6 @@
             <h2 class="text-2xl font-semibold text-gray-800">Artificial Intelligence</h2>
             <p class="text-lg text-gray-600">Pemberi Sertifikat: <strong>MySkill</strong></p>
             <p class="text-lg text-gray-600">Tanggal Penerbitan: <strong>27 - 11 - 2024</strong></p>
-            <p class="text-gray-600 text-justify"> Sertifikat ini menunjukkan pemahaman saya tentang Artificial Intelligence. Saya dapat berkolaborasi dengan teknologi AI untuk mengembangkan solusi otomatisasi yang efisien dan meningkatkan pengambilan keputusan.</p>
         </div>
     </div>
     
@@ -472,7 +531,6 @@
                 <h2 class="text-2xl font-semibold text-gray-800">Basic Accounting</h2>
                 <p class="text-lg text-gray-600">Pemberi Sertifikat: <strong>MySkill</strong></p>
                 <p class="text-lg text-gray-600">Tanggal Penerbitan: <strong>29 - 11 - 2024</strong></p>
-                <p class="text-gray-600 text-justify">Sertifikat ini menunjukkan pemahaman saya dalam prinsip dasar akuntansi. Keterampilan ini membantu saya dalam menyusun laporan keuangan dan mengelola transaksi secara efektif.</p>
             </div>
         </div>
     
@@ -488,7 +546,6 @@
                 <h2 class="text-2xl font-semibold text-gray-800">Basic Data</h2>
                 <p class="text-lg text-gray-600">Pemberi Sertifikat: <strong>MySkill</strong></p>
                 <p class="text-lg text-gray-600">Tanggal Penerbitan: <strong>29 - 10 - 2024</strong></p>
-                <p class="text-gray-600 text-justify">Sertifikat ini menunjukkan keterampilan dasar saya dalam mengelola dan menganalisis data. Saya dapat mengolah informasi dengan tepat untuk mendukung pengambilan keputusan yang lebih baik.</p>
             </div>
         </div>
 
@@ -504,7 +561,6 @@
             <h2 class="text-2xl font-semibold text-gray-800">Canva for Design</h2>
             <p class="text-lg text-gray-600">Pemberi Sertifikat: <strong>MySkill</strong></p>
             <p class="text-lg text-gray-600">Tanggal Penerbitan: <strong>16 - 09 - 2024</strong></p>
-            <p class="text-gray-600 text-justify"> Sertifikat ini menunjukkan kemampuan saya dalam menggunakan Canva untuk desain grafis. Saya dapat membuat materi visual yang menarik, seperti poster, presentasi, dan media sosial, untuk keperluan profesional.</p>
         </div>
     </div>
 </div>
@@ -698,4 +754,3 @@
 
 </body>
 </html>
-
